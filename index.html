@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <h1 class="app__title">Recipe Finder</h1>
+        <div class="search-bar">
+          <input type="text" class="search-bar__input" placeholder="Search recipes..." />
+          <button class="search-bar__button">Search</button>
+          <div class="search-bar__error"></div>
+        </div>
+      </header>
+
+      <nav class="categories">
+        <ul class="categories__list"></ul>
+      </nav>
+
+      <main class="recipes">
+        <div class="recipes__loader"></div>
+        <div class="recipes__list"></div>
+      </main>
+      <div class="modal modal--hidden">
+        <div class="modal__content">
+          <button class="modal__close">×</button>
+
+          <div class="modal__header">
+            <h2 class="modal__title" id="modal-title"></h2>
+            <img class="modal__image" src="" alt="" />
+          </div>
+          <div class="modal__body">
+            <div class="modal__ingredients"></div>
+            <div class="modal__instructions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
